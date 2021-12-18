@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFCFC"
+            android:drawableLeft="@drawable/chaquetas"
+            android:drawableRight="@drawable/chaquetas"
+            android:text="QUIERO MI CHAQUETA"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="28dp"
+            app:autoSizeTextType="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D8D6D6"
+                android:text="QUIERO MI CHAQUETA es una tienda virtual que te ayudara a encontrar tu chaqueta ideal."
+
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                app:autoSizeTextType="none" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:background="#D8D6D6"
+                android:text="podras personalizarla , de forma  que mas se acomode a tu estilo."
+                android:textColor="#120000"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/product"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@empty"
+                    android:backgroundTint="#5A5A5A"
+                    android:drawableLeft="@drawable/jacket"
+                    android:drawablePadding="8dp"
+                    android:text="Productos"
+                    android:textColor="#FCFFFC"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/servicio"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@empty"
+                    android:backgroundTint="#5A5A5A"
+                    android:drawableLeft="@drawable/servicios"
+                    android:drawablePadding="8dp"
+                    android:text="Servicios"
+                    android:textColor="#FCFFFC"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/sucursal"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@empty"
+                    android:backgroundTint="#5A5A5A"
+                    android:drawableLeft="@drawable/global"
+                    android:drawablePadding="8dp"
+                    android:text="Sucursales"
+                    android:textColor="#FCFFFC"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
